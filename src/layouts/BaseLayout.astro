@@ -76,13 +76,14 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     </main>
 
     <!-- 모바일 하단 고정 CTA -->
-    <div class="fixed bottom-0 left-0 right-0 z-50 md:hidden">
+    <div class="fixed bottom-0 left-0 right-0 z-50 md:hidden" style="padding-bottom: env(safe-area-inset-bottom);">
       <a
         href="tel:01023033778"
-        class="flex items-center justify-center w-full h-14 bg-gradient-to-r from-secondary via-yellow-300 to-secondary text-primary font-bold text-lg shadow-lg active:scale-95 transition-transform"
+        class="flex items-center justify-center w-full h-16 bg-gradient-to-r from-[#39FF14] via-[#9D00FF] to-[#39FF14] text-black font-black text-xl shadow-2xl active:scale-95 transition-all duration-300 animate-pulse"
+        style="box-shadow: 0 -4px 20px rgba(57, 255, 20, 0.5), 0 -4px 40px rgba(157, 0, 255, 0.5);"
         aria-label="예약 문의 전화하기"
       >
-        📞 예약 문의
+        📞 지금 바로 예약하기
       </a>
     </div>
 
