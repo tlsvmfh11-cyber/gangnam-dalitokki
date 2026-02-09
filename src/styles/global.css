@@ -1,0 +1,32 @@
+/* Do Hyeon + Nanum Gothic Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  html {
+    @apply scroll-smooth;
+    background-color: #0D0D0D;
+  }
+
+  body {
+    @apply font-body text-white antialiased;
+    @apply bg-black;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold;
+  }
+}
+
+@layer utilities {
+  .text-gradient-neon {
+    @apply bg-gradient-to-r from-neon-green via-neon-purple to-neon-green bg-clip-text text-transparent;
+  }
+}

@@ -1,0 +1,22 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+.astro/
+
+# environment
+.env
+.env.production
+
+# misc
+.DS_Store
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# temp scripts
+create-og-image.mjs
+convert-to-webp.mjs
